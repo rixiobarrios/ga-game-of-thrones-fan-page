@@ -1,3 +1,27 @@
+// Requirements
+
+// The starter code has been provided for you. lib/index.html and lib/style.css include the initial structure and styling.
+
+// In lib/script.js, you will find an array of objects with each character's name and bio.
+
+// You will need to modify the HTML, CSS, and JS to complete the requirements. Think about the problem you are solving in each step, and make use of the features of all three.
+
+// Add a button to each character's <div> with the class more-info. When the user clicks the button, the name of the character prints to the console.
+
+// Add more functionality to the button: when clicked, the bio of the character appears beneath their image.
+
+// Add an input field and submit button at the top of the page. When the user types the name of a character and clicks submit, only that character remains visible in the browser.
+
+// Add another button to each character's <div> with the class alive-or-dead. When the user clicks the button, indicate the character is still on the show with with a green STILL ALIVE! under their image or that they have been killed off with a red SORRY, YOU DEAD under their image.
+
+// Bonus
+
+// Create a button that, when clicked, arranges all characters in alphabetical order.
+
+// Create another button that randomly shuffles the characters.
+
+// Create the HTML elements for each character completely in Javascript and append them to the <div class="got-characters"> element.
+
 var characters = [
     {
         name: 'Daenerys Targaryen',
@@ -37,11 +61,46 @@ var characters = [
     },
 ];
 
-let button = document.querySelector('#daenerys');
-button.addEventListener('click', printName, false);
+let buttonDaenerys = document.querySelector('#daenerys');
+buttonDaenerys.addEventListener('click', printNameDaenerys, false);
 
-function printName(e) {
+function printNameDaenerys(e) {
     console.log('Daenerys');
+}
+
+let buttonKhal = document.querySelector('#khal');
+buttonKhal.addEventListener('click', printNameKhal, false);
+
+function printNameKhal(e) {
+    console.log('Khal');
+}
+
+let buttonTyrion = document.querySelector('#tyrion');
+buttonTyrion.addEventListener('click', printNameTyrion, false);
+
+function printNameTyrion(e) {
+    console.log('Tyrion');
+}
+
+let buttonSansa = document.querySelector('#sansa');
+buttonSansa.addEventListener('click', printNameSansa, false);
+
+function printNameSansa(e) {
+    console.log('Sansa');
+}
+
+let buttonArya = document.querySelector('#arya');
+buttonArya.addEventListener('click', printNameArya, false);
+
+function printNameArya(e) {
+    console.log('Arya');
+}
+
+let buttonJon = document.querySelector('#jon');
+buttonJon.addEventListener('click', printNameJon, false);
+
+function printNameJon(e) {
+    console.log('Jon');
 }
 
 // Find repo lab here: https://github.com/rixiobarrios/got-dom-events-lab
