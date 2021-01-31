@@ -37,4 +37,11 @@ var characters = [
     },
 ];
 
+let button = document.querySelector('#daenerys');
+button.addEventListener('click', printName, false);
+
+function printName(e) {
+    console.log('Daenerys');
+}
+
 // Find repo lab here: https://github.com/rixiobarrios/got-dom-events-lab
